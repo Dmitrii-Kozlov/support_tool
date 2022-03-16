@@ -4,7 +4,8 @@
 
 {% block content %}
 
-<h3>Последние 10 созданных заявок</h3>
+{% if title or module %}
+<h2>Результаты поиска{% if title %} по {{ title }}{% endif %}{% if module %} в APN {{ module }}{% endif %}</h2>
 <table class="table">
   <thead>
     <tr>
@@ -16,7 +17,7 @@
     </tr>
   </thead>
   <tbody>
-  {% for item in items %}
+  {% for item in results %}
     <tr>
       <th scope="row">{{ item.id }}</th>
       <td><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></td>
@@ -24,9 +25,18 @@
       <td>{{ item.author}}</td>
       <td>{{ item.created}}</td>
     </tr>
+  {% empty %}
+<h3>Ничего не найдено</h3>
   {% endfor %}
-
   </tbody>
 </table>
+
+{% else %}
+  <h3>Поиск заявок</h3>
+  <form method="get">
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Поиск</button>
+  </form>
+{% endif %}
 
 {% endblock %}

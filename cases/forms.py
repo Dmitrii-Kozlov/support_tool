@@ -1,15 +1,15 @@
-from django.forms import ModelForm, Textarea, TextInput, Select
+from django import forms
 from .models import Case, Comment
 
 
-class CaseForm(ModelForm):
+class CaseForm(forms.ModelForm):
     class Meta:
         model = Case
         fields = ['title', 'description', 'module']
         widgets = {
-            'description': Textarea(attrs={'class': 'form-control'}),
-            'title': TextInput(attrs={'class': 'form-control'}),
-            'module': Select(attrs={'class': 'form-control'}),
+            'description': forms.Textarea(attrs={'class': 'form-control'}),
+            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'module': forms.Select(attrs={'class': 'form-control'}),
         }
         labels = {
             'title': 'Краткое описание',
@@ -18,13 +18,22 @@ class CaseForm(ModelForm):
         }
 
 
-class CommentForm(ModelForm):
+class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['body']
         widgets = {
-            'body': Textarea(attrs={'class': 'form-control'}),
+            'body': forms.Textarea(attrs={'class': 'form-control'}),
         }
         labels = {
             'body': 'Ваш ответ',
         }
+
+
+class SearchForm(forms.Form):
+    title = forms.CharField(max_length=255, required=False, label='Поиск в описании')
+    title.widget = forms.TextInput(attrs={'class': 'form-control'})
+    module = forms.IntegerField(required=False, label='Поиск в APN')
+    module.widget = forms.NumberInput(attrs={'class': 'form-control'})
+    active = forms.BooleanField(required=False, label='Поиск только открытых заявок')
+
