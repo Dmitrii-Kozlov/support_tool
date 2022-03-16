@@ -1,5 +1,5 @@
 from django.forms import ModelForm, Textarea, TextInput, Select
-from .models import Case
+from .models import Case, Comment
 
 
 class CaseForm(ModelForm):
@@ -15,4 +15,16 @@ class CaseForm(ModelForm):
             'title': 'Краткое описание',
             'description': 'Описание',
             'module': 'Модуль'
+        }
+
+
+class CommentForm(ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['body']
+        widgets = {
+            'body': Textarea(attrs={'class': 'form-control'}),
+        }
+        labels = {
+            'body': 'Ваш ответ',
         }

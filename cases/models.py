@@ -14,7 +14,7 @@ class Case(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     module = models.IntegerField(choices=MODULES)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
 
@@ -23,4 +23,15 @@ class Case(models.Model):
 
     def get_absolute_url(self):
         return reverse('cases:detail', args=[str(self.id)])
+
+
+class Comment(models.Model):
+    body = models.TextField()
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
+    case = models.ForeignKey(Case, on_delete=models.CASCADE, related_name='comments')
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.body[:30]
+
 
