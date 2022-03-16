@@ -1,0 +1,25 @@
+{% extends "cases/base.html" %}
+
+{% block title %}Создание формы{% endblock %}
+
+{% block content %}
+
+<!--<form>-->
+<!--  <div class="mb-3">-->
+<!--    <label for="exampleInputTitle" class="form-label">Краткое описание</label>-->
+<!--    <input type="text" class="form-control" id="exampleInputTitle">-->
+<!--  </div>-->
+<!--  <div class="mb-3">-->
+<!--    <label for="exampleInputDescription" class="form-label">Описание</label>-->
+<!--    <input type="text" class="form-control" id="exampleInputDescription">-->
+<!--  </div>-->
+<!--  <button type="submit" class="btn btn-primary">Отправить</button>-->
+<!--</form>-->
+
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+
+{% endblock %}
