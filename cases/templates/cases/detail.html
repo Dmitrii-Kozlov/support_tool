@@ -1,0 +1,11 @@
+{% extends "cases/base.html" %}
+
+{% block title %}{{ item.title }}{% endblock %}
+
+{% block content %}
+
+<h3>{{ item.title }}</h3>
+<p>{{item.description }}</p>
+<small>создано {{ item.created }}, пользователем {{ item.author }}</small>
+
+{% endblock %}

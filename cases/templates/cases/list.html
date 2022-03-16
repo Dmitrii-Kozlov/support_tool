@@ -1,0 +1,32 @@
+{% extends "cases/base.html" %}
+
+{% block title %}Список{% endblock %}
+
+{% block content %}
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Описание</th>
+      <th scope="col">Модуль</th>
+      <th scope="col">Автор</th>
+      <th scope="col">Создано</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in items %}
+    <tr>
+      <th scope="row">{{ item.id }}</th>
+      <td><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></td>
+      <td>{{ item.module }}</td>
+      <td>{{ item.author}}</td>
+      <td>{{ item.created}}</td>
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+{% endblock %}
