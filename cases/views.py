@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic.base import View
 
@@ -5,7 +6,7 @@ from .forms import CaseForm, CommentForm, SearchForm
 from .models import Case
 
 
-class CaseListView(View):
+class CaseListView(LoginRequiredMixin, View):
     template_name = 'cases/list.html'
 
     def get(self, request):
@@ -16,7 +17,7 @@ class CaseListView(View):
         return render(request, template_name=self.template_name, context=context)
 
 
-class CaseDetailView(View):
+class CaseDetailView(LoginRequiredMixin, View):
     template_name = 'cases/detail.html'
 
     def get(self, request, pk):
@@ -49,7 +50,7 @@ class CaseDetailView(View):
         return redirect(case.get_absolute_url())
 
 
-class CaseCreateView(View):
+class CaseCreateView(LoginRequiredMixin, View):
     template_name = 'cases/create.html'
 
     def get(self, request):
@@ -73,7 +74,7 @@ class CaseCreateView(View):
         return render(request, template_name=self.template_name, context=context)
 
 
-class CaseSearchView(View):
+class CaseSearchView(LoginRequiredMixin, View):
     template_name = 'cases/search.html'
 
     def get(self, request):

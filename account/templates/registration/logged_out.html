@@ -1,0 +1,14 @@
+{% extends "cases/base.html" %}
+
+{% block title %}
+Аккаунт
+{% endblock %}
+
+{% block content %}
+
+<h3>Logged out</h3>
+<p>
+    Вы успешно вышли из системы.
+    Можете <a href="{% url 'account:login' %}">залогиниться ещё раз</a>
+</p>
+{% endblock %}
