@@ -21,4 +21,6 @@
     <input type="hidden" name="next" value="{{ next }}" />
     <button type="submit" class="btn btn-primary">Сохранить изменения</button>
 </form>
+<br>
+<a href="{% url 'account:password_change' %}" class="btn btn-success">Сменить пароль</a>
 {% endblock %}

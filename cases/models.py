@@ -10,6 +10,14 @@ MODULES = (
 )
 
 
+class AMOSModule(models.Model):
+    apn = models.IntegerField()
+    name = models.CharField(max_length=155)
+
+    def __str__(self):
+        return self.name
+
+
 def case_directory_path(instance, filename):
     try:
         id = instance.case.id
@@ -21,7 +29,8 @@ def case_directory_path(instance, filename):
 class Case(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    module = models.IntegerField(choices=MODULES)
+    # module = models.IntegerField(choices=MODULES)
+    module = models.ForeignKey(AMOSModule, on_delete=models.CASCADE)
     docfile = models.FileField(upload_to=case_directory_path, blank=True, null=True)
     author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)

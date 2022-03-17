@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Case, Comment
+from .models import Case, Comment, AMOSModule
 
 
 @admin.register(Case)
@@ -10,3 +10,8 @@ class CaseAdmin(admin.ModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('id', 'body', 'author')
+
+
+@admin.register(AMOSModule)
+class AMOSModuleAdmin(admin.ModelAdmin):
+    list_display = ('id', 'apn', 'name')
