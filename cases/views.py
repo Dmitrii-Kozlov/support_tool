@@ -30,7 +30,7 @@ class CaseDetailView(View):
         return render(request, template_name=self.template_name, context=context)
 
     def post(self, request, pk):
-        form = CommentForm(request.POST)
+        form = CommentForm(request.POST, request.FILES)
         case = get_object_or_404(Case, pk=pk)
         if form.is_valid():
             comment = form.save(commit=False)
@@ -64,7 +64,7 @@ class CaseCreateView(View):
         if form.is_valid():
             case = form.save(commit=False)
             case.author = request.user
-            case.docfile = request.FILES['docfile']
+            # case.docfile = request.FILES['docfile']
             case.save()
             return redirect(case.get_absolute_url())
         context = {

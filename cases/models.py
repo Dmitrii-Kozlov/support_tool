@@ -10,18 +10,31 @@ MODULES = (
 )
 
 
-def user_directory_path(instance, filename):
-    # file will be uploaded to MEDIA_ROOT/user_<id>/
-    return f'user_id_{instance.author.id}/documents/{filename}'
+def case_directory_path(instance, filename):
+    try:
+        id = instance.case.id
+    except:
+        id = instance.id
+    # file will be uploaded to MEDIA_ROOT/user_<id>/documents/
+    return f'case_{id}/documents/{filename}'
 
 class Case(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     module = models.IntegerField(choices=MODULES)
-    docfile = models.FileField(upload_to=user_directory_path, blank=True, null=True)
+    docfile = models.FileField(upload_to=case_directory_path, blank=True, null=True)
     author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
+
+    def save(self, *args, **kwargs):
+        if self.pk is None:
+            saved_docfile = self.docfile
+            self.docfile = None
+            super(Case, self).save(*args, **kwargs)
+            self.docfile = saved_docfile
+
+        super(Case, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.title
@@ -34,6 +47,7 @@ class Comment(models.Model):
     body = models.TextField()
     author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     case = models.ForeignKey(Case, on_delete=models.CASCADE, related_name='comments')
+    docfile = models.FileField(upload_to=case_directory_path, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
