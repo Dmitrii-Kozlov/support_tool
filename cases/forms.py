@@ -1,5 +1,5 @@
 from django import forms
-from .models import Case, Comment
+from .models import Case, Comment, AMOSModule
 
 
 class CaseForm(forms.ModelForm):
@@ -37,7 +37,9 @@ class CommentForm(forms.ModelForm):
 class SearchForm(forms.Form):
     title = forms.CharField(max_length=255, required=False, label='Поиск в описании')
     title.widget = forms.TextInput(attrs={'class': 'form-control'})
-    module = forms.IntegerField(required=False, label='Поиск в APN')
-    module.widget = forms.NumberInput(attrs={'class': 'form-control'})
+    # module = forms.IntegerField(required=False, label='Поиск в APN')
+    # module.widget = forms.NumberInput(attrs={'class': 'form-control'})
+    module = forms.ModelChoiceField(required=False, label='Поиск в APN', queryset=AMOSModule.objects.all())
+    module.widget = forms.Select(attrs={'class': 'form-control'})
     active = forms.BooleanField(required=False, label='Поиск только открытых заявок')
 
