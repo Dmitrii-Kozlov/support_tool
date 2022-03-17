@@ -13,7 +13,7 @@ class EditView(LoginRequiredMixin, View):
     template_name = 'account/edit.html'
 
     def get(self, request):
-        items = Case.objects.filter(author=request.user)
+        items = Case.objects.filter(author=request.user).filter(active=True)
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
         context = {
@@ -34,3 +34,14 @@ class EditView(LoginRequiredMixin, View):
             messages.error(request, 'Ошибка обновления профиля')
 
         return redirect('account:edit')
+
+
+class ArchiveView(LoginRequiredMixin, View):
+    template_name = 'account/archive.html'
+
+    def get(self, request):
+        items = Case.objects.filter(author=request.user)
+        context = {
+            'items': items
+        }
+        return render(request, template_name=self.template_name, context=context)
