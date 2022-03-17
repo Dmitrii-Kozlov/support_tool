@@ -51,6 +51,10 @@ class Case(models.Model):
     def get_absolute_url(self):
         return reverse('cases:detail', args=[str(self.id)])
 
+    def timestamp(self):
+        return self.created.strftime("%Y-%m-%d %H:%M:%S")
+
+
 
 class Comment(models.Model):
     body = models.TextField()
@@ -61,5 +65,8 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.body[:30]
+
+    def timestamp(self):
+        return self.created.strftime("%Y-%m-%d %H:%M:%S")
 
 

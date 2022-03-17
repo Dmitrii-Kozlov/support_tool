@@ -89,11 +89,10 @@ class CaseSearchView(LoginRequiredMixin, View):
                 title = form.cleaned_data.get('title')
                 module = form.cleaned_data.get('module')
                 active = form.cleaned_data.get('active')
-                print(module)
                 if title:
-                    results.extend(Case.objects.filter(title__icontains=title))
+                    results.extend(Case.objects.filter(title__icontains=title).filter(active=active))
                 if module:
-                    results.extend(Case.objects.filter(module=module))
+                    results.extend(Case.objects.filter(module=module).filter(active=active))
         context = {
             'form': form,
             'module': module,

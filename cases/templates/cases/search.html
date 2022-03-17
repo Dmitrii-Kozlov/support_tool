@@ -5,31 +5,9 @@
 {% block content %}
 
 {% if title or module %}
-<h2>Результаты поиска{% if title %} по {{ title }}{% endif %}{% if module %} в APN {{ module }}{% endif %}</h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Описание</th>
-      <th scope="col">Модуль</th>
-      <th scope="col">Автор</th>
-      <th scope="col">Создано</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for item in results %}
-    <tr>
-      <th scope="row">{{ item.id }}</th>
-      <td><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></td>
-      <td>{{ item.module }}</td>
-      <td>{{ item.author}}</td>
-      <td>{{ item.created}}</td>
-    </tr>
-  {% empty %}
-<h3>Ничего не найдено</h3>
-  {% endfor %}
-  </tbody>
-</table>
+<h3>Результаты поиска{% if title %} по {{ title }}{% endif %}{% if module %} в APN {{ module }}{% endif %}</h3>
+
+{% include 'cases/snippets/table.html' with results=results %}
 
 {% else %}
   <h3>Поиск заявок</h3>
