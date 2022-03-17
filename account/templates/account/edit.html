@@ -1,0 +1,24 @@
+{% extends "cases/base.html" %}
+
+{% block title %}
+Редактирование профиля
+{% endblock %}
+
+{% block content %}
+{% if messages %}
+  {% for message in messages %}
+  <div>
+  <h3>{{ message|safe }}</h3>
+    </div>
+  {% endfor %}
+{% else %}
+<h3>Редактирование профиля</h3>
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+    <input type="hidden" name="next" value="{{ next }}" />
+    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+</form>
+{% endblock %}

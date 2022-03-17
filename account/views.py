@@ -1,32 +1,37 @@
+from django.contrib import messages
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic.base import View
 
-from .forms import LoginForm
-# Create your views here.
+from .forms import LoginForm, ProfileEditForm, UserEditForm
+from .models import Profile
 
 
-class LoginView(View):
-    template_name = 'account/login.html'
+class EditView(LoginRequiredMixin, View):
+    template_name = 'account/edit.html'
 
     def get(self, request):
-        form = LoginForm()
+        user_form = UserEditForm(instance=request.user)
+        profile_form = ProfileEditForm(instance=request.user.profile)
         context = {
-            'form': form
+            'user_form': user_form,
+            'profile_form': profile_form
         }
         return render(request, template_name=self.template_name, context=context)
 
-    def post(self, request):
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            cd = form.cleaned_data
-            user = authenticate(request, username=cd.get('username'), password=cd.get('password'))
-            if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    return HttpResponse('Successful')
-                else:
-                    return HttpResponse('disabled')
-            else:
-                return HttpResponse('Invalid login')
+    def post(self,request):
+        user_form = UserEditForm(instance=request.user, data=request.POST)
+        profile_form = ProfileEditForm(instance=request.user.profile, data=request.POST)
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+            messages.success(request, 'Профиль обновлен')
+        else:
+            messages.error(request, 'Ошибка обновления профиля')
+        context = {
+            'user_form': user_form,
+            'profile_form': profile_form
+        }
+        return render(request, template_name=self.template_name, context=context)

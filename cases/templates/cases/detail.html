@@ -9,7 +9,7 @@
 {% if item.docfile %}
 <a href="{{ item.docfile.url }}">{{ item.docfile.name }}</a><br>
 {% endif %}
-<small>создано {{ item.created }}, пользователем {{ item.author }}</small>
+<small>создано {{ item.created }}, пользователем {{ item.author.first_name }} {{ item.author.last_name }} ({{ item.author.profile.airline }})</small>
 <hr>
 <hr>
 {% for comment in item.comments.all %}
@@ -17,7 +17,7 @@
 {% if comment.docfile %}
 <a href="{{ comment.docfile.url }}">{{ comment.docfile.name }}</a><br>
 {% endif %}
-<small>создано {{ comment.created }}, пользователем {{ comment.author }}</small>
+<small>создано {{ comment.created }}, пользователем {{ comment.author.first_name }} {{ comment.author.last_name }} ({{ comment.author.profile.airline }})</small>
 <hr>
 <hr>
 {% endfor %}
