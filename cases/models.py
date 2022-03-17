@@ -10,10 +10,15 @@ MODULES = (
 )
 
 
+def user_directory_path(instance, filename):
+    # file will be uploaded to MEDIA_ROOT/user_<id>/
+    return f'user_id_{instance.author.id}/documents/{filename}'
+
 class Case(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     module = models.IntegerField(choices=MODULES)
+    docfile = models.FileField(upload_to=user_directory_path, blank=True, null=True)
     author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)

@@ -60,10 +60,11 @@ class CaseCreateView(View):
         return render(request, template_name=self.template_name, context=context)
 
     def post(self, request):
-        form = CaseForm(request.POST)
+        form = CaseForm(request.POST, request.FILES)
         if form.is_valid():
             case = form.save(commit=False)
             case.author = request.user
+            case.docfile = request.FILES['docfile']
             case.save()
             return redirect(case.get_absolute_url())
         context = {

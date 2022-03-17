@@ -6,6 +6,7 @@
 
 <h3>{{ item.title }}{% if not item.active %} (Заявка закрыта){% endif %}</h3>
 <p>{{item.description }}</p>
+<a href="{{ item.docfile.url }}">{{ item.docfile.name }}</a>
 <small>создано {{ item.created }}, пользователем {{ item.author }}</small>
 <hr>
 <hr>

@@ -1,1 +1,6 @@
 venv/
+support_tool/__pycache__/
+cases/__pycache__/
+cases/migrations/__pycache__/
+db.sqlite3
+media/
