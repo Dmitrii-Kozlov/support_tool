@@ -4,6 +4,5 @@ cases/__pycache__/
 cases/migrations/__pycache__/
 account/__pycache__/
 account/migrations/__pycache__/
-db.sqlite3
 media/
 fabric/
