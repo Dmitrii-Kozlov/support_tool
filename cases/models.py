@@ -15,7 +15,7 @@ class AMOSModule(models.Model):
     name = models.CharField(max_length=155)
 
     def __str__(self):
-        return self.name
+        return f"{self.name} (APN{self.apn})"
 
 
 def case_directory_path(instance, filename):

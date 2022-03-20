@@ -6,3 +6,4 @@ account/__pycache__/
 account/migrations/__pycache__/
 media/
 fabric/
+db.sqlite3

@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Q
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic.base import View
 
@@ -89,25 +90,33 @@ class CaseSearchView(LoginRequiredMixin, View):
                 title = form.cleaned_data.get('title')
                 module = form.cleaned_data.get('module')
                 active = form.cleaned_data.get('active')
-                print(f"{title=}, {module=}, {active=}")
-                if title and module:
-                    if active:
-                        qs = Case.objects.filter(title__icontains=title).filter(module=module).filter(active=active)
-                    else:
-                        qs = Case.objects.filter(title__icontains=title).filter(module=module)
-                    results.extend(qs)
-                elif title:
-                    if active:
-                        qs = Case.objects.filter(title__icontains=title).filter(active=active)
-                    else:
-                        qs = Case.objects.filter(title__icontains=title)
-                    results.extend(qs)
-                elif module:
-                    if active:
-                        qs = Case.objects.filter(module=module).filter(active=active)
-                    else:
-                        qs = Case.objects.filter(module=module)
-                    results.extend(qs)
+            #     print((f"{title=}, {module=}, {active=}"))
+            # if title and module:
+            #     results = Case.objects.filter(
+            #         Q(title__icontains=title) & Q(active=active)
+            #     )
+            # else:
+            #     results = Case.objects.filter(
+            #         Q(title__icontains=title) | Q(active=active)
+            #     )
+            if title and module:
+                if active:
+                    qs = Case.objects.filter(title__icontains=title).filter(module=module).filter(active=active)
+                else:
+                    qs = Case.objects.filter(title__icontains=title).filter(module=module)
+                results.extend(qs)
+            elif title:
+                if active:
+                    qs = Case.objects.filter(title__icontains=title).filter(active=active)
+                else:
+                    qs = Case.objects.filter(title__icontains=title)
+                results.extend(qs)
+            elif module:
+                if active:
+                    qs = Case.objects.filter(module=module).filter(active=active)
+                else:
+                    qs = Case.objects.filter(module=module)
+                results.extend(qs)
         context = {
             'form': form,
             'module': module,
