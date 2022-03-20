@@ -1,4 +1,8 @@
 from django import forms
+from django.conf import settings
+from django.template.defaultfilters import filesizeformat
+from django.utils.translation import ugettext_lazy as _
+
 from .models import Case, Comment, AMOSModule
 
 
@@ -16,8 +20,14 @@ class CaseForm(forms.ModelForm):
             'title': 'Краткое описание',
             'description': 'Описание',
             'module': 'Модуль',
-            'docfile': 'Добавить файл',
+            'docfile': 'Добавить файл (максимальный размер файла 10МВ)',
         }
+    def clean_docfile(self):
+        content = self.cleaned_data['docfile']
+        if content.size > settings.MAX_UPLOAD_SIZE:
+            raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
+                                          f'Текущий размер {filesizeformat(content.size)}'))
+        return content
 
 
 class CommentForm(forms.ModelForm):

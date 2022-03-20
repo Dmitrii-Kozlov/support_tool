@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2jkkq@o_6r(i5y1&cl2e_vmx@5s$n8m+)1@537c6afv+i(5+*9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 if DEBUG:
     ALLOWED_HOSTS = []
@@ -142,3 +142,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'cases:list'
 LOGIN_URL = 'account:login'
 LOGOUT_URL = 'account:logout'
+
+
+# 2.5MB - 2621440
+# 5MB - 5242880
+# 10MB - 10485760
+# 20MB - 20971520
+# 50MB - 5242880
+# 100MB 104857600
+# 250MB - 214958080
+# 500MB - 429916160
+MAX_UPLOAD_SIZE = 10485760
