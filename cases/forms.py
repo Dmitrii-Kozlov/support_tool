@@ -26,9 +26,10 @@ class CaseForm(forms.ModelForm):
         }
     def clean_docfile(self):
         content = self.cleaned_data['docfile']
-        if content.size > settings.MAX_UPLOAD_SIZE:
-            raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
-                                          f'Текущий размер {filesizeformat(content.size)}'))
+        if content:
+            if content.size > settings.MAX_UPLOAD_SIZE:
+                raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
+                                              f'Текущий размер {filesizeformat(content.size)}'))
         return content
 
 
@@ -46,9 +47,10 @@ class CommentForm(forms.ModelForm):
         }
     def clean_docfile(self):
         content = self.cleaned_data['docfile']
-        if content.size > settings.MAX_UPLOAD_SIZE:
-            raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
-                                          f'Текущий размер {filesizeformat(content.size)}'))
+        if content:
+            if content.size > settings.MAX_UPLOAD_SIZE:
+                raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
+                                              f'Текущий размер {filesizeformat(content.size)}'))
         return content
 
 
