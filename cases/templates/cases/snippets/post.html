@@ -2,6 +2,6 @@
 {% if item.docfile %}
 <a href="{{ item.docfile.url }}">{{ item.docfile.name }}</a><br>
 {% endif %}
-<small>создано {{ item.timestamp }}, пользователем {{ item.author.first_name }} {{ item.author.last_name }} ({{ item.author.profile.airline }})</small>
+<small>создано {{ item.timestamp }} (UTC), пользователем {{ item.author.first_name }} {{ item.author.last_name }} ({{ item.author.profile.airline }})</small>
 <hr>
 <hr>

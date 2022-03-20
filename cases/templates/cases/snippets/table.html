@@ -16,7 +16,7 @@
       <td><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></td>
       <td>{{ item.module }}</td>
       <td>{{ item.author.first_name }} {{ item.author.last_name }} ({{ item.author.profile.airline }})</td>
-      <td>{{ item.timestamp}}</td>
+      <td>{{ item.timestamp}} (UTC)</td>
       <td>{% if item.active %}Открыта{% else %}Закрыта{% endif %}</td>
     </tr>
   {% empty %}
