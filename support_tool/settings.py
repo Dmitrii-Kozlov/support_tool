@@ -30,8 +30,6 @@ if DEBUG:
 else:
     ALLOWED_HOSTS = ['10.211.55.8', 'www.support.com', 'support.com']
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
