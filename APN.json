@@ -1,0 +1,26 @@
+[
+{
+  "model": "cases.amosmodule",
+  "pk": 1,
+  "fields": {
+    "apn": 1844,
+    "name": "Maintenance Forecast"
+  }
+},
+{
+  "model": "cases.amosmodule",
+  "pk": 2,
+  "fields": {
+    "apn": 1488,
+    "name": "Workorder"
+  }
+},
+{
+  "model": "cases.amosmodule",
+  "pk": 3,
+  "fields": {
+    "apn": 58,
+    "name": "View/Edit Workpackage"
+  }
+}
+]

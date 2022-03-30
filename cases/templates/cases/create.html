@@ -17,6 +17,7 @@
 <!--</form>-->
 
 <form method="post" enctype="multipart/form-data">
+    <a href="{% url 'cases:search-apn' %}?next={{next_url}}" class="btn btn-secondary">Выбрать APN</a>
     {{ form.as_p }}
     {% csrf_token %}
     <button type="submit" class="btn btn-primary">Отправить</button>

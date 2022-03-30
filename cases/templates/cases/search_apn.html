@@ -1,0 +1,27 @@
+{% extends "cases/base.html" %}
+
+{% block title %}Список APN{% endblock %}
+
+{% block content %}
+
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" aria-label="Search" name="q">
+        <button class="btn btn-outline-success" type="submit">Поиск</button>
+      </form>
+
+
+<form method="POST" class="form-control">
+        {% csrf_token %}
+        {% for apn in object_list %}
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="apn" id="apn_{{ apn.id }}"
+                     value="{{ apn.apn }}">
+              <label class="form-check-label" for="apn_{{ apn.id }}">
+                {{ apn.name }} (APN{{apn.apn}})
+              </label>
+            </div>
+        {% endfor %}
+    <button type="submit" class="save btn btn-success">Выбрать APN</button>
+</form>
+
+{% endblock %}

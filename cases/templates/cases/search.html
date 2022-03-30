@@ -11,6 +11,8 @@
 
 {% else %}
   <h3>Поиск заявок</h3>
+  <a href="{% url 'cases:search-apn' %}?next={{next_url}}" class="btn btn-secondary">Выбрать APN</a>
+
   <form method="get">
     {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Поиск</button>

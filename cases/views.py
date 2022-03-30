@@ -1,10 +1,13 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
+from django.utils.http import is_safe_url
+from django.views.generic import ListView
 from django.views.generic.base import View
 
 from .forms import CaseForm, CommentForm, SearchForm
-from .models import Case
+from .models import Case, AMOSModule
 
 
 class CaseListView(LoginRequiredMixin, View):
@@ -55,9 +58,15 @@ class CaseCreateView(LoginRequiredMixin, View):
     template_name = 'cases/create.html'
 
     def get(self, request):
-        form = CaseForm()
+        apn_id = request.session.get('apn')
+        try:
+            apn = AMOSModule.objects.get(apn=apn_id)
+        except:
+            apn = None
+        form = CaseForm(initial={'module': apn})
         context = {
-            'form': form
+            'form': form,
+            'next_url': 'cases:create'
         }
         return render(request, template_name=self.template_name, context=context)
 
@@ -79,12 +88,21 @@ class CaseSearchView(LoginRequiredMixin, View):
     template_name = 'cases/search.html'
 
     def get(self, request):
-        form = SearchForm()
+        apn_id = request.session.get('apn')
+
+        try:
+            apn = AMOSModule.objects.get(apn=apn_id)
+        except:
+            apn = None
+        form = SearchForm(initial={'module': apn, 'active': True})
         title = None
         module = None
         active = True
         results = []
-        if 'title' or 'module' in request.GET:
+        print(f"{request.GET.get('title')=}", f"{request.GET.get('module')=}")
+
+        if request.GET.get('title') or request.GET.get('module'):
+            print(f"{request.GET.get('title')=}", f"{request.GET.get('module')=}")
             form = SearchForm(request.GET)
             if form.is_valid():
                 title = form.cleaned_data.get('title')
@@ -121,6 +139,45 @@ class CaseSearchView(LoginRequiredMixin, View):
             'form': form,
             'module': module,
             'title': title,
-            'results': results
+            'results': results,
+            'next_url': 'cases:search'
+        }
+        print(f'{results=}')
+        return render(request, template_name=self.template_name, context=context)
+
+
+class APNSearch(View):
+    template_name = 'cases/search_apn.html'
+
+    def get(self, request):
+        apn_text = request.GET.get('q')
+        next = request.GET.get('next')
+        print(f"{next=}", 'get')
+        if next:
+            request.session['next_url'] = next
+        if apn_text:
+            queryset = AMOSModule.objects.filter(
+                Q(name__icontains=apn_text) | Q(apn__icontains=apn_text)
+            )
+        else:
+            queryset = AMOSModule.objects.all()
+        context = {
+            'object_list': queryset,
         }
         return render(request, template_name=self.template_name, context=context)
+
+
+    def post(self, request):
+        apn = request.POST.get('apn')
+        request.session['apn'] = apn
+        next = request.session.get('next_url')
+        print(f"{next=}", 'post')
+        if is_safe_url(url=next, allowed_hosts=['*']):
+            return redirect(next)
+        # return redirect('cases:search')
+        try:
+            return redirect(next)
+        except:
+            return redirect('/')
+
+

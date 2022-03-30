@@ -62,7 +62,7 @@ class SearchForm(forms.Form):
     module = forms.ModelChoiceField(required=False, label='Поиск в APN', queryset=AMOSModule.objects.all())
     # module.widget = ForeignKeyRawIdWidget(Case._meta.get_field("module").remote_field, admin.site),
     module.widget = forms.Select(attrs={'class': 'form-control'})
-    active = forms.BooleanField(required=False, label='Поиск только открытых заявок', initial=True)
+    active = forms.BooleanField(required=False, label='Поиск только открытых заявок')
 
 
 # class MyCustomForm(ModelForm):
