@@ -1,9 +1,9 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.conf import settings
 from django.db.models import Q
-from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse
 from django.utils.http import is_safe_url
-from django.views.generic import ListView
 from django.views.generic.base import View
 
 from .forms import CaseForm, CommentForm, SearchForm
@@ -171,13 +171,18 @@ class APNSearch(View):
         apn = request.POST.get('apn')
         request.session['apn'] = apn
         next = request.session.get('next_url')
-        print(f"{next=}", 'post')
-        if is_safe_url(url=next, allowed_hosts=['*']):
-            return redirect(next)
-        # return redirect('cases:search')
         try:
-            return redirect(next)
+            if is_safe_url(url=request.build_absolute_uri(reverse(next)), allowed_hosts=request.get_host()):
+                return redirect(next)
+            else:
+                return redirect('/')
         except:
             return redirect('/')
+
+        # return redirect('cases:search')
+        # try:
+        #     return redirect(next)
+        # except:
+        #     return redirect('/')
 
 
