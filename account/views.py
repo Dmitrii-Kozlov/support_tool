@@ -13,7 +13,7 @@ class EditView(LoginRequiredMixin, View):
     template_name = 'account/edit.html'
 
     def get(self, request):
-        items = Case.objects.filter(author=request.user).filter(active=True)
+        items = Case.objects.select_related('module', 'author').filter(author=request.user).filter(active=True)
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
         context = {
@@ -40,7 +40,7 @@ class ArchiveView(LoginRequiredMixin, View):
     template_name = 'account/archive.html'
 
     def get(self, request):
-        items = Case.objects.filter(author=request.user)
+        items = Case.objects.select_related('module', 'author').filter(author=request.user)
         context = {
             'items': items
         }

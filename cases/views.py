@@ -14,7 +14,7 @@ class CaseListView(LoginRequiredMixin, View):
     template_name = 'cases/list.html'
 
     def get(self, request):
-        qs = Case.objects.filter(active=True).order_by('-created')[:10]
+        qs = Case.objects.select_related('module', 'author', 'author__profile', 'author__profile__airline').filter(active=True).order_by('-created')[:10]
         context = {
             'items': qs
         }
@@ -25,9 +25,11 @@ class CaseDetailView(LoginRequiredMixin, View):
     template_name = 'cases/detail.html'
 
     def get(self, request, pk):
-        case = get_object_or_404(Case, pk=pk)
+        case = get_object_or_404(Case.objects.select_related('module', 'author', 'author__profile', 'author__profile__airline'), pk=pk)
+        comments = case.comments.select_related('author', 'author__profile', 'author__profile__airline').all()
         context = {
             'item': case,
+            'comments': comments
         }
         if case.active:
             form = CommentForm()
@@ -99,10 +101,7 @@ class CaseSearchView(LoginRequiredMixin, View):
         module = None
         active = True
         results = []
-        print(f"{request.GET.get('title')=}", f"{request.GET.get('module')=}")
-
         if request.GET.get('title') or request.GET.get('module'):
-            print(f"{request.GET.get('title')=}", f"{request.GET.get('module')=}")
             form = SearchForm(request.GET)
             if form.is_valid():
                 title = form.cleaned_data.get('title')
@@ -122,19 +121,19 @@ class CaseSearchView(LoginRequiredMixin, View):
                     qs = Case.objects.filter(title__icontains=title).filter(module=module).filter(active=active)
                 else:
                     qs = Case.objects.filter(title__icontains=title).filter(module=module)
-                results.extend(qs)
+                results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
             elif title:
                 if active:
                     qs = Case.objects.filter(title__icontains=title).filter(active=active)
                 else:
                     qs = Case.objects.filter(title__icontains=title)
-                results.extend(qs)
+                results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
             elif module:
                 if active:
                     qs = Case.objects.filter(module=module).filter(active=active)
                 else:
                     qs = Case.objects.filter(module=module)
-                results.extend(qs)
+                results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
         context = {
             'form': form,
             'module': module,
@@ -142,7 +141,6 @@ class CaseSearchView(LoginRequiredMixin, View):
             'results': results,
             'next_url': 'cases:search'
         }
-        print(f'{results=}')
         return render(request, template_name=self.template_name, context=context)
 
 

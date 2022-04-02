@@ -13,7 +13,7 @@ class Airline(models.Model):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     airline = models.ForeignKey(Airline, on_delete=models.CASCADE, null=True)
 
     def __str__(self):

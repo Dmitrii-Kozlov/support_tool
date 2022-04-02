@@ -6,7 +6,7 @@
 
 <h3>{{ item.title }}{% if not item.active %} (Заявка закрыта){% endif %}</h3>
 {% include 'cases/snippets/post.html' with item=item %}
-{% for comment in item.comments.all %}
+{% for comment in comments.all %}
     {% include 'cases/snippets/post.html' with item=comment %}
 {% endfor %}
 <form method="post" enctype="multipart/form-data">
