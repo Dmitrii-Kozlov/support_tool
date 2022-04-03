@@ -107,33 +107,16 @@ class CaseSearchView(LoginRequiredMixin, View):
                 title = form.cleaned_data.get('title')
                 module = form.cleaned_data.get('module')
                 active = form.cleaned_data.get('active')
-            #     print((f"{title=}, {module=}, {active=}"))
-            # if title and module:
-            #     results = Case.objects.filter(
-            #         Q(title__icontains=title) & Q(active=active)
-            #     )
-            # else:
-            #     results = Case.objects.filter(
-            #         Q(title__icontains=title) | Q(active=active)
-            #     )
-            if title and module:
-                if active:
-                    qs = Case.objects.filter(title__icontains=title).filter(module=module).filter(active=active)
-                else:
-                    qs = Case.objects.filter(title__icontains=title).filter(module=module)
-                results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
-            elif title:
-                if active:
-                    qs = Case.objects.filter(title__icontains=title).filter(active=active)
-                else:
-                    qs = Case.objects.filter(title__icontains=title)
-                results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
-            elif module:
-                if active:
-                    qs = Case.objects.filter(module=module).filter(active=active)
-                else:
-                    qs = Case.objects.filter(module=module)
-                results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
+
+            qs = Case.objects.all()
+            if title:
+                qs = qs.filter(title__icontains=title)
+            if module:
+                qs = qs.filter(module=module)
+            if active:
+                qs = qs.filter(active=active)
+            results.extend(qs.select_related('module', 'author', 'author__profile', 'author__profile__airline'))
+
         context = {
             'form': form,
             'module': module,
