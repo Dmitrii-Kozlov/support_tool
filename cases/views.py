@@ -79,10 +79,9 @@ class CaseCreateView(LoginRequiredMixin, View):
     def post(self, request):
         form = CaseForm(request.POST, request.FILES)
         if form.is_valid():
-            case = form.save(commit=False)
+            case = form.save()
             case.author = request.user
             case.emails_list.add(request.user)
-            # case.docfile = request.FILES['docfile']
             case.save()
             case_update_mail.delay(case.id)
             return redirect(case.get_absolute_url())
