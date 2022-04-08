@@ -29,12 +29,15 @@ def case_directory_path(instance, filename):
 class Case(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    # module = models.IntegerField(choices=MODULES)
+    emails_list = models.ManyToManyField(User, blank=True, related_name='cases')
     module = models.ForeignKey(AMOSModule, on_delete=models.CASCADE)
     docfile = models.FileField(upload_to=case_directory_path, blank=True, null=True)
     author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
+
+    def get_emails(self):
+        return "\n".join([p.email for p in self.emails_list.all()])
 
     def save(self, *args, **kwargs):
         if self.pk is None:

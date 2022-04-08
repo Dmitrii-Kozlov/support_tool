@@ -4,7 +4,7 @@ from .models import Case, Comment, AMOSModule
 
 @admin.register(Case)
 class CaseAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'description', 'module', 'author', 'created', 'active')
+    list_display = ('id', 'title', 'description', 'module', 'author', 'created', 'active', 'get_emails')
     list_editable = ('module', 'active')
 
 

@@ -8,6 +8,7 @@ from django.views.generic.base import View
 
 from .forms import CaseForm, CommentForm, SearchForm
 from .models import Case, AMOSModule
+from .tasks import case_update_mail
 
 
 class CaseListView(LoginRequiredMixin, View):
@@ -43,10 +44,13 @@ class CaseDetailView(LoginRequiredMixin, View):
             comment = form.save(commit=False)
             comment.author = request.user
             comment.case = case
+            case.emails_list.add(request.user)
+            case.save()
             if request.POST.get('close-case') == 'close':
                 case.active = False
                 case.save()
             comment.save()
+            case_update_mail.delay(case.id)
             return redirect(case.get_absolute_url())
         context = {
             'item': case,
@@ -77,8 +81,10 @@ class CaseCreateView(LoginRequiredMixin, View):
         if form.is_valid():
             case = form.save(commit=False)
             case.author = request.user
+            case.emails_list.add(request.user)
             # case.docfile = request.FILES['docfile']
             case.save()
+            case_update_mail.delay(case.id)
             return redirect(case.get_absolute_url())
         context = {
             'form': form
