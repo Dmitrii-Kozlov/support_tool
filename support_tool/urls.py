@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cases.urls', namespace='cases')),
     path('account/', include('account.urls', namespace='account')),
-    path('api/', include('api.urls'))
+    path('api/', include('api.urls')),
+    path('api-auth/', include('rest_framework.urls')),
 ]
 
 if settings.DEBUG:

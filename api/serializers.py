@@ -5,4 +5,5 @@ from cases.models import Case
 class CaseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Case
-        fields = ('title', 'description', )
+        # fields = ('id', 'title', 'description', 'emails_list', 'module', 'docfile', 'author', 'created', 'active')
+        fields = '__all__'
