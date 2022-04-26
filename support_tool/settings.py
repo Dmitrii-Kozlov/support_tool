@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     # local
     'cases',
     'account',
+    'api',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -44,9 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #3rd party
+    # 3rd party
     'debug_toolbar',
     'django_extensions',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -162,4 +164,3 @@ INTERNAL_IPS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-

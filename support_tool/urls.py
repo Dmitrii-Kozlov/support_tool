@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cases.urls', namespace='cases')),
     path('account/', include('account.urls', namespace='account')),
+    path('api/', include('api.urls'))
 ]
 
 if settings.DEBUG:
