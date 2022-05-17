@@ -22,13 +22,13 @@ class CaseForm(forms.ModelForm):
             'title': 'Краткое описание',
             'description': 'Описание',
             'module': 'Модуль',
-            'docfile': 'Добавить файл (максимальный размер файла 10МВ)',
+            'docfile': f'Добавить файл (максимальный размер файла {filesizeformat(settings.MAX_UPLOAD_SIZE)})',
         }
     def clean_docfile(self):
         content = self.cleaned_data['docfile']
         if content:
             if content.size > settings.MAX_UPLOAD_SIZE:
-                raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
+                raise forms.ValidationError(_(f'Максимальный размер файла {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
                                               f'Текущий размер {filesizeformat(content.size)}'))
         return content
 
@@ -43,13 +43,13 @@ class CommentForm(forms.ModelForm):
         }
         labels = {
             'body': 'Ваш ответ',
-            'docfile': 'Добавить файл',
+            'docfile': f'Добавить файл (максимальный размер файла {filesizeformat(settings.MAX_UPLOAD_SIZE)})',
         }
     def clean_docfile(self):
         content = self.cleaned_data['docfile']
         if content:
             if content.size > settings.MAX_UPLOAD_SIZE:
-                raise forms.ValidationError(_(f'Максимальный размер файла 10МВ {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
+                raise forms.ValidationError(_(f'Максимальный размер файла {filesizeformat(settings.MAX_UPLOAD_SIZE)}. '
                                               f'Текущий размер {filesizeformat(content.size)}'))
         return content
 

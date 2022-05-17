@@ -39,7 +39,9 @@ class CaseDetailView(LoginRequiredMixin, View):
 
     def post(self, request, pk):
         form = CommentForm(request.POST, request.FILES)
-        case = get_object_or_404(Case, pk=pk)
+        # case = get_object_or_404(Case, pk=pk)
+        case = get_object_or_404(Case.objects.select_related('module', 'author', 'author__profile', 'author__profile__airline'), pk=pk)
+        comments = case.comments.select_related('author', 'author__profile', 'author__profile__airline').all()
         if form.is_valid():
             comment = form.save(commit=False)
             comment.author = request.user
@@ -54,10 +56,11 @@ class CaseDetailView(LoginRequiredMixin, View):
             return redirect(case.get_absolute_url())
         context = {
             'item': case,
-            'form': form
+            'form': form,
+            'comments': comments,
         }
-        # return render(request, template_name=self.template_name, context=context)
-        return redirect(case.get_absolute_url())
+        return render(request, template_name=self.template_name, context=context)
+        # return redirect(case.get_absolute_url())
 
 
 class CaseCreateView(LoginRequiredMixin, View):
