@@ -1,0 +1,4738 @@
+[
+  {
+    "model": "cases.amosmodule",
+    "pk": 1,
+    "fields": {
+      "apn": 1,
+      "name": "Workorder Information System"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3,
+    "fields": {
+      "apn": 3,
+      "name": "Calendar"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 5,
+    "fields": {
+      "apn": 5,
+      "name": "Messenger"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 6,
+    "fields": {
+      "apn": 6,
+      "name": "Calculator"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 7,
+    "fields": {
+      "apn": 7,
+      "name": "Online User-Watch"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 8,
+    "fields": {
+      "apn": 8,
+      "name": "Live Logging Console"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 9,
+    "fields": {
+      "apn": 9,
+      "name": "View a Logfile"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10,
+    "fields": {
+      "apn": 10,
+      "name": "Configure Server"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 11,
+    "fields": {
+      "apn": 11,
+      "name": "Database-Explorer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 14,
+    "fields": {
+      "apn": 14,
+      "name": "Admin Logins"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 15,
+    "fields": {
+      "apn": 15,
+      "name": "Admin Roles"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 16,
+    "fields": {
+      "apn": 16,
+      "name": "Admin Programs"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 18,
+    "fields": {
+      "apn": 18,
+      "name": "Basic-Data Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 20,
+    "fields": {
+      "apn": 20,
+      "name": "Workorder Form"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 24,
+    "fields": {
+      "apn": 24,
+      "name": "DateConverter"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 27,
+    "fields": {
+      "apn": 27,
+      "name": "Assembly Configuration Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 29,
+    "fields": {
+      "apn": 29,
+      "name": "SQL-Central"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 30,
+    "fields": {
+      "apn": 30,
+      "name": "Workpackage Browser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 36,
+    "fields": {
+      "apn": 36,
+      "name": "WWW-Browser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 47,
+    "fields": {
+      "apn": 47,
+      "name": "General Conditions"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 49,
+    "fields": {
+      "apn": 49,
+      "name": "Sticky-Note"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 53,
+    "fields": {
+      "apn": 53,
+      "name": "Address Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 58,
+    "fields": {
+      "apn": 58,
+      "name": "View/Edit Workpackage"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 59,
+    "fields": {
+      "apn": 59,
+      "name": "Part Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 62,
+    "fields": {
+      "apn": 62,
+      "name": "Web-Drive"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 63,
+    "fields": {
+      "apn": 63,
+      "name": "View/Edit Modifications"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 65,
+    "fields": {
+      "apn": 65,
+      "name": "Phonetics-Converter"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 83,
+    "fields": {
+      "apn": 83,
+      "name": "Warranty Claim"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 115,
+    "fields": {
+      "apn": 115,
+      "name": "Realtime-Statistic"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 146,
+    "fields": {
+      "apn": 146,
+      "name": "Staff Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 147,
+    "fields": {
+      "apn": 147,
+      "name": "Rotables Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 148,
+    "fields": {
+      "apn": 148,
+      "name": "Staff And PQS Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 150,
+    "fields": {
+      "apn": 150,
+      "name": "Rotables Label Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 153,
+    "fields": {
+      "apn": 153,
+      "name": "Print Personal Datasheet"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 156,
+    "fields": {
+      "apn": 156,
+      "name": "Statistic-Analyzer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 158,
+    "fields": {
+      "apn": 158,
+      "name": "Aircraft Browser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 180,
+    "fields": {
+      "apn": 180,
+      "name": "Currency Converter"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 184,
+    "fields": {
+      "apn": 184,
+      "name": "Component Tree Label Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 188,
+    "fields": {
+      "apn": 188,
+      "name": "Parts Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 196,
+    "fields": {
+      "apn": 196,
+      "name": "Billing"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 204,
+    "fields": {
+      "apn": 204,
+      "name": "Parts Consumption Forecast"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 206,
+    "fields": {
+      "apn": 206,
+      "name": "Aircraft Utilization"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 217,
+    "fields": {
+      "apn": 217,
+      "name": "Experience Sheet"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 221,
+    "fields": {
+      "apn": 221,
+      "name": "Stock Information"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 225,
+    "fields": {
+      "apn": 225,
+      "name": "Pickslip Request"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 230,
+    "fields": {
+      "apn": 230,
+      "name": "Pickslip Confirmation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 231,
+    "fields": {
+      "apn": 231,
+      "name": "Modification Status"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 233,
+    "fields": {
+      "apn": 233,
+      "name": "Barcode Centre"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 235,
+    "fields": {
+      "apn": 235,
+      "name": "Print empty Release Certificate"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 246,
+    "fields": {
+      "apn": 246,
+      "name": "Reference-Tree Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 249,
+    "fields": {
+      "apn": 249,
+      "name": "Maintenance Programs Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 254,
+    "fields": {
+      "apn": 254,
+      "name": "Code Transfer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 261,
+    "fields": {
+      "apn": 261,
+      "name": "Data-Transfer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 270,
+    "fields": {
+      "apn": 270,
+      "name": "Terminal Application"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 273,
+    "fields": {
+      "apn": 273,
+      "name": "MEL Manual Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 278,
+    "fields": {
+      "apn": 278,
+      "name": "Pool Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 280,
+    "fields": {
+      "apn": 280,
+      "name": "Reporting Back Maintenance Event"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 281,
+    "fields": {
+      "apn": 281,
+      "name": "Check Control System"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 285,
+    "fields": {
+      "apn": 285,
+      "name": "Modification Control Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 292,
+    "fields": {
+      "apn": 292,
+      "name": "Weight&Balance"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 293,
+    "fields": {
+      "apn": 293,
+      "name": "Parts Transfer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 298,
+    "fields": {
+      "apn": 298,
+      "name": "Inventory Control"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 299,
+    "fields": {
+      "apn": 299,
+      "name": "Print Logbook for a Rotable"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 306,
+    "fields": {
+      "apn": 306,
+      "name": "Project Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 307,
+    "fields": {
+      "apn": 307,
+      "name": "Invoice Checking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 308,
+    "fields": {
+      "apn": 308,
+      "name": "Aircraft Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 309,
+    "fields": {
+      "apn": 309,
+      "name": "Cancel Pickslip"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 313,
+    "fields": {
+      "apn": 313,
+      "name": "Station Parts Alert"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 323,
+    "fields": {
+      "apn": 323,
+      "name": "Complaint Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 325,
+    "fields": {
+      "apn": 325,
+      "name": "Price Book"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 326,
+    "fields": {
+      "apn": 326,
+      "name": "Electronic Pending Shelf"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 334,
+    "fields": {
+      "apn": 334,
+      "name": "Scrap Material"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 335,
+    "fields": {
+      "apn": 335,
+      "name": "Cancel Receivings"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 338,
+    "fields": {
+      "apn": 338,
+      "name": "Driver Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 354,
+    "fields": {
+      "apn": 354,
+      "name": "Failure Confirmation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 355,
+    "fields": {
+      "apn": 355,
+      "name": "Currencies"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 358,
+    "fields": {
+      "apn": 358,
+      "name": "Terminal Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 359,
+    "fields": {
+      "apn": 359,
+      "name": "Shelf Expiry"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 361,
+    "fields": {
+      "apn": 361,
+      "name": "Re/Assign Session"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 375,
+    "fields": {
+      "apn": 375,
+      "name": "Pickslip Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 378,
+    "fields": {
+      "apn": 378,
+      "name": "Session Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 388,
+    "fields": {
+      "apn": 388,
+      "name": "Inventory Differences Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 396,
+    "fields": {
+      "apn": 396,
+      "name": "Plate Modification Status Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 397,
+    "fields": {
+      "apn": 397,
+      "name": "Definitions"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 399,
+    "fields": {
+      "apn": 399,
+      "name": "Systems Reliability"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 401,
+    "fields": {
+      "apn": 401,
+      "name": "Part Reliability"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 405,
+    "fields": {
+      "apn": 405,
+      "name": "Sim Status"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 410,
+    "fields": {
+      "apn": 410,
+      "name": "Tool Registration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 411,
+    "fields": {
+      "apn": 411,
+      "name": "Purchasing Summary Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 413,
+    "fields": {
+      "apn": 413,
+      "name": "Sim Statistics"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 416,
+    "fields": {
+      "apn": 416,
+      "name": "Quality Audit Tool"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 424,
+    "fields": {
+      "apn": 424,
+      "name": "Parts Catalogue"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 425,
+    "fields": {
+      "apn": 425,
+      "name": "Productivity Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 427,
+    "fields": {
+      "apn": 427,
+      "name": "Mailbox-Monitor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 430,
+    "fields": {
+      "apn": 430,
+      "name": "Customer Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 431,
+    "fields": {
+      "apn": 431,
+      "name": "Daily Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 432,
+    "fields": {
+      "apn": 432,
+      "name": "Event Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 434,
+    "fields": {
+      "apn": 434,
+      "name": "View / Edit Session"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 435,
+    "fields": {
+      "apn": 435,
+      "name": "View / Edit Complaint"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 437,
+    "fields": {
+      "apn": 437,
+      "name": "Timeslot Finder"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 438,
+    "fields": {
+      "apn": 438,
+      "name": "Course Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 439,
+    "fields": {
+      "apn": 439,
+      "name": "Audit Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 443,
+    "fields": {
+      "apn": 443,
+      "name": "Session Check"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 453,
+    "fields": {
+      "apn": 453,
+      "name": "Reminder"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 457,
+    "fields": {
+      "apn": 457,
+      "name": "Pool Request Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 459,
+    "fields": {
+      "apn": 459,
+      "name": "Reorder Proposal Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 460,
+    "fields": {
+      "apn": 460,
+      "name": "Rotables Utilization Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 462,
+    "fields": {
+      "apn": 462,
+      "name": "Standard Reliability Reports"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 464,
+    "fields": {
+      "apn": 464,
+      "name": "Suspicious Parts"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 471,
+    "fields": {
+      "apn": 471,
+      "name": "Billing Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 472,
+    "fields": {
+      "apn": 472,
+      "name": "Electronic Audit"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 476,
+    "fields": {
+      "apn": 476,
+      "name": "Aircraft Status Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 478,
+    "fields": {
+      "apn": 478,
+      "name": "QA-Question Admin"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 479,
+    "fields": {
+      "apn": 479,
+      "name": "Rotables Removal Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 490,
+    "fields": {
+      "apn": 490,
+      "name": "Technical Case Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 497,
+    "fields": {
+      "apn": 497,
+      "name": "Removal Bookings Analyzer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 502,
+    "fields": {
+      "apn": 502,
+      "name": "Astra Code Translation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 503,
+    "fields": {
+      "apn": 503,
+      "name": "Labelbooking Workflow Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 506,
+    "fields": {
+      "apn": 506,
+      "name": "View / Edit Findings"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 526,
+    "fields": {
+      "apn": 526,
+      "name": "Rogue Units"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 529,
+    "fields": {
+      "apn": 529,
+      "name": "Receiving Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 531,
+    "fields": {
+      "apn": 531,
+      "name": "MEL Report Analyzer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 532,
+    "fields": {
+      "apn": 532,
+      "name": "Part Special Field Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 536,
+    "fields": {
+      "apn": 536,
+      "name": "Suggest QA Actions"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 540,
+    "fields": {
+      "apn": 540,
+      "name": "Text Module Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 544,
+    "fields": {
+      "apn": 544,
+      "name": "Pool Label Booking Correction"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 545,
+    "fields": {
+      "apn": 545,
+      "name": "Production Group Admin"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 547,
+    "fields": {
+      "apn": 547,
+      "name": "Delays & Cancellations"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 549,
+    "fields": {
+      "apn": 549,
+      "name": "Print MOCL"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 551,
+    "fields": {
+      "apn": 551,
+      "name": "Course Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 557,
+    "fields": {
+      "apn": 557,
+      "name": "Vendor Performance Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 565,
+    "fields": {
+      "apn": 565,
+      "name": "Publication Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 566,
+    "fields": {
+      "apn": 566,
+      "name": "Configure Publication Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 571,
+    "fields": {
+      "apn": 571,
+      "name": "Rotable Statistics"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 574,
+    "fields": {
+      "apn": 574,
+      "name": "Generate Severity Factor Data"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 586,
+    "fields": {
+      "apn": 586,
+      "name": "File Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 601,
+    "fields": {
+      "apn": 601,
+      "name": "Text Index Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 606,
+    "fields": {
+      "apn": 606,
+      "name": "Login Reactivation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 607,
+    "fields": {
+      "apn": 607,
+      "name": "Workorder References"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 609,
+    "fields": {
+      "apn": 609,
+      "name": "Login History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 612,
+    "fields": {
+      "apn": 612,
+      "name": "Workflow Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 617,
+    "fields": {
+      "apn": 617,
+      "name": "Maintenance Coordination Module"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 635,
+    "fields": {
+      "apn": 635,
+      "name": "Airbus Aircraft Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 639,
+    "fields": {
+      "apn": 639,
+      "name": "Component Modification Status"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 640,
+    "fields": {
+      "apn": 640,
+      "name": "Modification Activity"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 647,
+    "fields": {
+      "apn": 647,
+      "name": "Seat Load Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 649,
+    "fields": {
+      "apn": 649,
+      "name": "Repeated Item Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 659,
+    "fields": {
+      "apn": 659,
+      "name": "Customer Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 664,
+    "fields": {
+      "apn": 664,
+      "name": "Badge Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 666,
+    "fields": {
+      "apn": 666,
+      "name": "Badge History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 667,
+    "fields": {
+      "apn": 667,
+      "name": "Customer Check-In / Check-Out"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 672,
+    "fields": {
+      "apn": 672,
+      "name": "Customer Check-In History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 673,
+    "fields": {
+      "apn": 673,
+      "name": "Taskcard Status/History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 678,
+    "fields": {
+      "apn": 678,
+      "name": "Archive Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 679,
+    "fields": {
+      "apn": 679,
+      "name": "Archive Viewer Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 681,
+    "fields": {
+      "apn": 681,
+      "name": "Publication Location Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 683,
+    "fields": {
+      "apn": 683,
+      "name": "Contact Publication Authors"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 684,
+    "fields": {
+      "apn": 684,
+      "name": "AMOS Availability"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 685,
+    "fields": {
+      "apn": 685,
+      "name": "Publication Acknowledgement"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 687,
+    "fields": {
+      "apn": 687,
+      "name": "Shanghai"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 688,
+    "fields": {
+      "apn": 688,
+      "name": "Documents Inbox"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 691,
+    "fields": {
+      "apn": 691,
+      "name": "Feature Matrix"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 693,
+    "fields": {
+      "apn": 693,
+      "name": "Workpackage Paperwork"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 698,
+    "fields": {
+      "apn": 698,
+      "name": "Pickslip Failed Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 704,
+    "fields": {
+      "apn": 704,
+      "name": "Default ToDo Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 705,
+    "fields": {
+      "apn": 705,
+      "name": "Rotables Removal Report FA"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 706,
+    "fields": {
+      "apn": 706,
+      "name": "FAA Activity Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 711,
+    "fields": {
+      "apn": 711,
+      "name": "Resource Overview"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 712,
+    "fields": {
+      "apn": 712,
+      "name": "Taskcard Times Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 713,
+    "fields": {
+      "apn": 713,
+      "name": "Technical Delays & Cancellations"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 715,
+    "fields": {
+      "apn": 715,
+      "name": "Resource Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 716,
+    "fields": {
+      "apn": 716,
+      "name": "Resource History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 723,
+    "fields": {
+      "apn": 723,
+      "name": "Active Supplier Rating"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 729,
+    "fields": {
+      "apn": 729,
+      "name": "Customisable Panel Editor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 732,
+    "fields": {
+      "apn": 732,
+      "name": "Resource Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 733,
+    "fields": {
+      "apn": 733,
+      "name": "Recreate Rotable"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 739,
+    "fields": {
+      "apn": 739,
+      "name": "Clock"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 741,
+    "fields": {
+      "apn": 741,
+      "name": "Issue Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 743,
+    "fields": {
+      "apn": 743,
+      "name": "Powerplant Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 744,
+    "fields": {
+      "apn": 744,
+      "name": "Show Scanned Documents"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 745,
+    "fields": {
+      "apn": 745,
+      "name": "ATA200 Part Number Checker"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 746,
+    "fields": {
+      "apn": 746,
+      "name": "Powerplant Event Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 747,
+    "fields": {
+      "apn": 747,
+      "name": "Assign Closed W/Os"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 750,
+    "fields": {
+      "apn": 750,
+      "name": "Participation Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 751,
+    "fields": {
+      "apn": 751,
+      "name": "Document Confirmation Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 753,
+    "fields": {
+      "apn": 753,
+      "name": "Check Package Builder"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 758,
+    "fields": {
+      "apn": 758,
+      "name": "IFSD Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 761,
+    "fields": {
+      "apn": 761,
+      "name": "Controlled Parts List"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 770,
+    "fields": {
+      "apn": 770,
+      "name": "External Component Monitoring"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 776,
+    "fields": {
+      "apn": 776,
+      "name": "MSA Contract Reporting"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 780,
+    "fields": {
+      "apn": 780,
+      "name": "Contract Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 781,
+    "fields": {
+      "apn": 781,
+      "name": "Define FA Qty Calculation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 786,
+    "fields": {
+      "apn": 786,
+      "name": "Structural Damage"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 795,
+    "fields": {
+      "apn": 795,
+      "name": "Print blank Labels"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 807,
+    "fields": {
+      "apn": 807,
+      "name": "Publication Revision Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 821,
+    "fields": {
+      "apn": 821,
+      "name": "Barcode Printer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 838,
+    "fields": {
+      "apn": 838,
+      "name": "Invoice Transfer Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 839,
+    "fields": {
+      "apn": 839,
+      "name": "Oil Consumption Statistics"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 843,
+    "fields": {
+      "apn": 843,
+      "name": "Failure Confirmation Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 847,
+    "fields": {
+      "apn": 847,
+      "name": "Message-Board"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 850,
+    "fields": {
+      "apn": 850,
+      "name": "Surplus Material"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 852,
+    "fields": {
+      "apn": 852,
+      "name": "Engineering Orders"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 853,
+    "fields": {
+      "apn": 853,
+      "name": "Invoice Price Control"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 855,
+    "fields": {
+      "apn": 855,
+      "name": "AJCP Adapter"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 858,
+    "fields": {
+      "apn": 858,
+      "name": "Workorder Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 859,
+    "fields": {
+      "apn": 859,
+      "name": "Receiving Invoice Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 862,
+    "fields": {
+      "apn": 862,
+      "name": "Repair/Removal Summary Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 869,
+    "fields": {
+      "apn": 869,
+      "name": "Technical Assistance"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 876,
+    "fields": {
+      "apn": 876,
+      "name": "Maintenance Findings Reporting"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 880,
+    "fields": {
+      "apn": 880,
+      "name": "Labeling"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 883,
+    "fields": {
+      "apn": 883,
+      "name": "Rotable Calculator"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 899,
+    "fields": {
+      "apn": 899,
+      "name": "Advanced Reorder Proposal"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 902,
+    "fields": {
+      "apn": 902,
+      "name": "AIM Logging"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 918,
+    "fields": {
+      "apn": 918,
+      "name": "Root Cause Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 931,
+    "fields": {
+      "apn": 931,
+      "name": "TelexTerminal"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 932,
+    "fields": {
+      "apn": 932,
+      "name": "SPEC2000-Monitor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 935,
+    "fields": {
+      "apn": 935,
+      "name": "Shop Capability Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 956,
+    "fields": {
+      "apn": 956,
+      "name": "Workpackage Extension"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 966,
+    "fields": {
+      "apn": 966,
+      "name": "Report Designer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 972,
+    "fields": {
+      "apn": 972,
+      "name": "UOM Converter"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 973,
+    "fields": {
+      "apn": 973,
+      "name": "UOM Conversion Editor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 974,
+    "fields": {
+      "apn": 974,
+      "name": "Shift Pattern Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 977,
+    "fields": {
+      "apn": 977,
+      "name": "Public Holiday Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 978,
+    "fields": {
+      "apn": 978,
+      "name": "Shift Group Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 979,
+    "fields": {
+      "apn": 979,
+      "name": "Staff Time Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 985,
+    "fields": {
+      "apn": 985,
+      "name": "Pool Cost Settlement"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 988,
+    "fields": {
+      "apn": 988,
+      "name": "Part Alternates Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 990,
+    "fields": {
+      "apn": 990,
+      "name": "Entry Type Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 991,
+    "fields": {
+      "apn": 991,
+      "name": "AMOS Mail"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 992,
+    "fields": {
+      "apn": 992,
+      "name": "MessageQueue Browser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1014,
+    "fields": {
+      "apn": 1014,
+      "name": "Logistics Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1015,
+    "fields": {
+      "apn": 1015,
+      "name": "Production Planning Template"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1016,
+    "fields": {
+      "apn": 1016,
+      "name": "Production Control"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1023,
+    "fields": {
+      "apn": 1023,
+      "name": "Spec2000 Import"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1024,
+    "fields": {
+      "apn": 1024,
+      "name": "Planning Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1025,
+    "fields": {
+      "apn": 1025,
+      "name": "Course Registration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1026,
+    "fields": {
+      "apn": 1026,
+      "name": "ToDo Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1047,
+    "fields": {
+      "apn": 1047,
+      "name": "Sim Overview"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1070,
+    "fields": {
+      "apn": 1070,
+      "name": "Airbus MMEL Import"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1080,
+    "fields": {
+      "apn": 1080,
+      "name": "Dirty Finger Prints Archive"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1082,
+    "fields": {
+      "apn": 1082,
+      "name": "CM Task Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1083,
+    "fields": {
+      "apn": 1083,
+      "name": "CM Template Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1084,
+    "fields": {
+      "apn": 1084,
+      "name": "CM Shop Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1085,
+    "fields": {
+      "apn": 1085,
+      "name": "CM Shop Work"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1088,
+    "fields": {
+      "apn": 1088,
+      "name": "Define Material Sales Price"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1110,
+    "fields": {
+      "apn": 1110,
+      "name": "Production Planning"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1117,
+    "fields": {
+      "apn": 1117,
+      "name": "Report Form Number Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1120,
+    "fields": {
+      "apn": 1120,
+      "name": "KPI Analyzer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1127,
+    "fields": {
+      "apn": 1127,
+      "name": "Loan Cost Calculator"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1131,
+    "fields": {
+      "apn": 1131,
+      "name": "Work Time Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1132,
+    "fields": {
+      "apn": 1132,
+      "name": "Work Time Progress Reporting"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1133,
+    "fields": {
+      "apn": 1133,
+      "name": "Indirect Job Creation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1134,
+    "fields": {
+      "apn": 1134,
+      "name": "Missing Parts List"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1188,
+    "fields": {
+      "apn": 1188,
+      "name": "Unscheduled Ground Times"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1198,
+    "fields": {
+      "apn": 1198,
+      "name": "Dangerous Goods Reports"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1204,
+    "fields": {
+      "apn": 1204,
+      "name": "Bookings Analyser (Financial)"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1205,
+    "fields": {
+      "apn": 1205,
+      "name": "Generic Label Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1206,
+    "fields": {
+      "apn": 1206,
+      "name": "Repairable Consumables Label Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1208,
+    "fields": {
+      "apn": 1208,
+      "name": "Shipment Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1225,
+    "fields": {
+      "apn": 1225,
+      "name": "Time Bookings"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1240,
+    "fields": {
+      "apn": 1240,
+      "name": "DG Shippers Declaration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1273,
+    "fields": {
+      "apn": 1273,
+      "name": "AWB Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1286,
+    "fields": {
+      "apn": 1286,
+      "name": "IATA Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1299,
+    "fields": {
+      "apn": 1299,
+      "name": "Daily Check Control"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1313,
+    "fields": {
+      "apn": 1313,
+      "name": "Occurrence Reporting"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1319,
+    "fields": {
+      "apn": 1319,
+      "name": "Order History Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1328,
+    "fields": {
+      "apn": 1328,
+      "name": "Order Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1333,
+    "fields": {
+      "apn": 1333,
+      "name": "PBH Contract Reporting"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1335,
+    "fields": {
+      "apn": 1335,
+      "name": "Order Reminder"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1354,
+    "fields": {
+      "apn": 1354,
+      "name": "AIM Schema Visualizer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1355,
+    "fields": {
+      "apn": 1355,
+      "name": "Financial Reports"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1357,
+    "fields": {
+      "apn": 1357,
+      "name": "Bill Package"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1381,
+    "fields": {
+      "apn": 1381,
+      "name": "Stream Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1382,
+    "fields": {
+      "apn": 1382,
+      "name": "XSLT Converter"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1384,
+    "fields": {
+      "apn": 1384,
+      "name": "Workorder And Taskcard Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1385,
+    "fields": {
+      "apn": 1385,
+      "name": "AEX Online Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1386,
+    "fields": {
+      "apn": 1386,
+      "name": "ILS Online Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1396,
+    "fields": {
+      "apn": 1396,
+      "name": "AIM Manual Export"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1403,
+    "fields": {
+      "apn": 1403,
+      "name": "AIM File Import"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1404,
+    "fields": {
+      "apn": 1404,
+      "name": "AIM Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1417,
+    "fields": {
+      "apn": 1417,
+      "name": "Survey Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1418,
+    "fields": {
+      "apn": 1418,
+      "name": "Workorder"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1426,
+    "fields": {
+      "apn": 1426,
+      "name": "Shift Planning Reporting"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1427,
+    "fields": {
+      "apn": 1427,
+      "name": "Data Verification"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1429,
+    "fields": {
+      "apn": 1429,
+      "name": "Create Findings"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1431,
+    "fields": {
+      "apn": 1431,
+      "name": "Repair Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1440,
+    "fields": {
+      "apn": 1440,
+      "name": "Workflow Logger"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1441,
+    "fields": {
+      "apn": 1441,
+      "name": "Clock-In / Clock-Out"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1442,
+    "fields": {
+      "apn": 1442,
+      "name": "Parameter Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1444,
+    "fields": {
+      "apn": 1444,
+      "name": "Form Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1446,
+    "fields": {
+      "apn": 1446,
+      "name": "Reporting Back Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1451,
+    "fields": {
+      "apn": 1451,
+      "name": "XML Validator"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1452,
+    "fields": {
+      "apn": 1452,
+      "name": "AMOS Keystore"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1454,
+    "fields": {
+      "apn": 1454,
+      "name": "Label Booking Correction"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1459,
+    "fields": {
+      "apn": 1459,
+      "name": "Shift Planning Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1470,
+    "fields": {
+      "apn": 1470,
+      "name": "AIM Webservice Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1486,
+    "fields": {
+      "apn": 1486,
+      "name": "Estimated Demand/Capacity"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1498,
+    "fields": {
+      "apn": 1498,
+      "name": "Receiving Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1500,
+    "fields": {
+      "apn": 1500,
+      "name": "Maintenance Key Admin"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1507,
+    "fields": {
+      "apn": 1507,
+      "name": "Tool Handover"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1509,
+    "fields": {
+      "apn": 1509,
+      "name": "Performed External Label Bookings"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1511,
+    "fields": {
+      "apn": 1511,
+      "name": "Labor Regulations"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1524,
+    "fields": {
+      "apn": 1524,
+      "name": "OEM Documents Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1525,
+    "fields": {
+      "apn": 1525,
+      "name": "OEM Documents Library"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1536,
+    "fields": {
+      "apn": 1536,
+      "name": "LHT Interface Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1543,
+    "fields": {
+      "apn": 1543,
+      "name": "Capability Check"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1564,
+    "fields": {
+      "apn": 1564,
+      "name": "Depreciation Model Scheme"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1565,
+    "fields": {
+      "apn": 1565,
+      "name": "Depreciation Model Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1566,
+    "fields": {
+      "apn": 1566,
+      "name": "Rotable Depreciation Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1573,
+    "fields": {
+      "apn": 1573,
+      "name": "Flight Log"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1589,
+    "fields": {
+      "apn": 1589,
+      "name": "Flight Logbook"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1624,
+    "fields": {
+      "apn": 1624,
+      "name": "LHT Document Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1627,
+    "fields": {
+      "apn": 1627,
+      "name": "Consistency Analyser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1631,
+    "fields": {
+      "apn": 1631,
+      "name": "Deferred Defect Analyzer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1635,
+    "fields": {
+      "apn": 1635,
+      "name": "Support Tool"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1658,
+    "fields": {
+      "apn": 1658,
+      "name": "Financial Transaction Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1662,
+    "fields": {
+      "apn": 1662,
+      "name": "History Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1664,
+    "fields": {
+      "apn": 1664,
+      "name": "Chart of Accounts"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1672,
+    "fields": {
+      "apn": 1672,
+      "name": "Storage Engine Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1683,
+    "fields": {
+      "apn": 1683,
+      "name": "Technical Availability Performance"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1715,
+    "fields": {
+      "apn": 1715,
+      "name": "General Ledger Monitoring System"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1728,
+    "fields": {
+      "apn": 1728,
+      "name": "LHT Contract Synchronization"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1747,
+    "fields": {
+      "apn": 1747,
+      "name": "El. Signature Queue"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1748,
+    "fields": {
+      "apn": 1748,
+      "name": "El. Signature History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1775,
+    "fields": {
+      "apn": 1775,
+      "name": "Part Financial Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1786,
+    "fields": {
+      "apn": 1786,
+      "name": "PDF Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1793,
+    "fields": {
+      "apn": 1793,
+      "name": "Validation Checker"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1804,
+    "fields": {
+      "apn": 1804,
+      "name": "Training DB Dumper"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1828,
+    "fields": {
+      "apn": 1828,
+      "name": "Software Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1832,
+    "fields": {
+      "apn": 1832,
+      "name": "Software Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1841,
+    "fields": {
+      "apn": 1841,
+      "name": "Material Flow Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1842,
+    "fields": {
+      "apn": 1842,
+      "name": "Material Flow Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1843,
+    "fields": {
+      "apn": 1843,
+      "name": "Material Flow Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1844,
+    "fields": {
+      "apn": 1844,
+      "name": "Maintenance Forecast"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1848,
+    "fields": {
+      "apn": 1848,
+      "name": "Work Template Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1866,
+    "fields": {
+      "apn": 1866,
+      "name": "Customs Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1867,
+    "fields": {
+      "apn": 1867,
+      "name": "Customs Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1868,
+    "fields": {
+      "apn": 1868,
+      "name": "Customs Regions"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1889,
+    "fields": {
+      "apn": 1889,
+      "name": "Reliability Report Builder"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1895,
+    "fields": {
+      "apn": 1895,
+      "name": "Maintenance Event Initialiser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1899,
+    "fields": {
+      "apn": 1899,
+      "name": "Material Flow Monitor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1904,
+    "fields": {
+      "apn": 1904,
+      "name": "Work Step Repository"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1926,
+    "fields": {
+      "apn": 1926,
+      "name": "Kit Management 2.0"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1934,
+    "fields": {
+      "apn": 1934,
+      "name": "Operator Maintenance Program"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1940,
+    "fields": {
+      "apn": 1940,
+      "name": "Financial Entity Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1976,
+    "fields": {
+      "apn": 1976,
+      "name": "Data Source Editor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 1993,
+    "fields": {
+      "apn": 1993,
+      "name": "Quotation Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2015,
+    "fields": {
+      "apn": 2015,
+      "name": "Order Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2028,
+    "fields": {
+      "apn": 2028,
+      "name": "Pool Base Kit Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2031,
+    "fields": {
+      "apn": 2031,
+      "name": "Counter Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2033,
+    "fields": {
+      "apn": 2033,
+      "name": "Default Supplier Exception Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2082,
+    "fields": {
+      "apn": 2082,
+      "name": "IATA IS and CH Calendar Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2083,
+    "fields": {
+      "apn": 2083,
+      "name": "Analyse Release Change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2110,
+    "fields": {
+      "apn": 2110,
+      "name": "Approval Control Board"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2111,
+    "fields": {
+      "apn": 2111,
+      "name": "Approval Control Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2121,
+    "fields": {
+      "apn": 2121,
+      "name": "Goods Receiving"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2130,
+    "fields": {
+      "apn": 2130,
+      "name": "Swap Rotables"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2137,
+    "fields": {
+      "apn": 2137,
+      "name": "AMOS Control Centre"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2150,
+    "fields": {
+      "apn": 2150,
+      "name": "Counter History Browser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2151,
+    "fields": {
+      "apn": 2151,
+      "name": "Maintenance Event Browser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2159,
+    "fields": {
+      "apn": 2159,
+      "name": "AIM Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2167,
+    "fields": {
+      "apn": 2167,
+      "name": "Data Clean-up"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2168,
+    "fields": {
+      "apn": 2168,
+      "name": "Error Codes Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2172,
+    "fields": {
+      "apn": 2172,
+      "name": "Financial Interface Monitor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2185,
+    "fields": {
+      "apn": 2185,
+      "name": "Map Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2201,
+    "fields": {
+      "apn": 2201,
+      "name": "Planning Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2207,
+    "fields": {
+      "apn": 2207,
+      "name": "Organisation Approval Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2214,
+    "fields": {
+      "apn": 2214,
+      "name": "RFID Mapping"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2221,
+    "fields": {
+      "apn": 2221,
+      "name": "Entity Transaction Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2226,
+    "fields": {
+      "apn": 2226,
+      "name": "External Print Service Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2253,
+    "fields": {
+      "apn": 2253,
+      "name": "Course Participant"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2254,
+    "fields": {
+      "apn": 2254,
+      "name": "Protected Customer Objects"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2257,
+    "fields": {
+      "apn": 2257,
+      "name": "AWB Tracking Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2259,
+    "fields": {
+      "apn": 2259,
+      "name": "Debug Tool"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2293,
+    "fields": {
+      "apn": 2293,
+      "name": "Component Inspection & Records"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2310,
+    "fields": {
+      "apn": 2310,
+      "name": "SRT Interface Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2313,
+    "fields": {
+      "apn": 2313,
+      "name": "Release change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2319,
+    "fields": {
+      "apn": 2319,
+      "name": "Maintenance Effectivity Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2323,
+    "fields": {
+      "apn": 2323,
+      "name": "Resource Planning"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2333,
+    "fields": {
+      "apn": 2333,
+      "name": "Boeing 787 Authorized Configuration Parser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2339,
+    "fields": {
+      "apn": 2339,
+      "name": "Workorder Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2340,
+    "fields": {
+      "apn": 2340,
+      "name": "Documentation Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2342,
+    "fields": {
+      "apn": 2342,
+      "name": "Boeing 787 EDMS Configuration Parser"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2347,
+    "fields": {
+      "apn": 2347,
+      "name": "Report Defect"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2357,
+    "fields": {
+      "apn": 2357,
+      "name": "Long-Term Planning"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2365,
+    "fields": {
+      "apn": 2365,
+      "name": "Financial Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2373,
+    "fields": {
+      "apn": 2373,
+      "name": "Workorder Action"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2376,
+    "fields": {
+      "apn": 2376,
+      "name": "Part Info"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2378,
+    "fields": {
+      "apn": 2378,
+      "name": "Workorder Inspection"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2380,
+    "fields": {
+      "apn": 2380,
+      "name": "Workorder View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2381,
+    "fields": {
+      "apn": 2381,
+      "name": "Aircraft Status"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2387,
+    "fields": {
+      "apn": 2387,
+      "name": "Workorder Transfer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2392,
+    "fields": {
+      "apn": 2392,
+      "name": "Shipment"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2398,
+    "fields": {
+      "apn": 2398,
+      "name": "S1000D Catalog Part Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2409,
+    "fields": {
+      "apn": 2409,
+      "name": "Store Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2418,
+    "fields": {
+      "apn": 2418,
+      "name": "FedEx Interface Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2422,
+    "fields": {
+      "apn": 2422,
+      "name": "Server Profiling"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2424,
+    "fields": {
+      "apn": 2424,
+      "name": "Workorder Closure"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2448,
+    "fields": {
+      "apn": 2448,
+      "name": "Data Source Widget Editor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2506,
+    "fields": {
+      "apn": 2506,
+      "name": "Workorder Time Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2519,
+    "fields": {
+      "apn": 2519,
+      "name": "Material Availability"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2521,
+    "fields": {
+      "apn": 2521,
+      "name": "Help"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2524,
+    "fields": {
+      "apn": 2524,
+      "name": "E-Signature Queue"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2526,
+    "fields": {
+      "apn": 2526,
+      "name": "Pickslip Info"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2528,
+    "fields": {
+      "apn": 2528,
+      "name": "AMOS Configuration Transfer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2529,
+    "fields": {
+      "apn": 2529,
+      "name": "Map"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2531,
+    "fields": {
+      "apn": 2531,
+      "name": "Cost Management System"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2533,
+    "fields": {
+      "apn": 2533,
+      "name": "E-Signature History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2543,
+    "fields": {
+      "apn": 2543,
+      "name": "ACARS Messaging"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2551,
+    "fields": {
+      "apn": 2551,
+      "name": "Workorder Component Change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2585,
+    "fields": {
+      "apn": 2585,
+      "name": "Handover Tool"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2587,
+    "fields": {
+      "apn": 2587,
+      "name": "Self Picking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2593,
+    "fields": {
+      "apn": 2593,
+      "name": "Workorder Part Request"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2595,
+    "fields": {
+      "apn": 2595,
+      "name": "Workorder Work Step"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2605,
+    "fields": {
+      "apn": 2605,
+      "name": "Store Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2606,
+    "fields": {
+      "apn": 2606,
+      "name": "AMOS Scheduler"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2607,
+    "fields": {
+      "apn": 2607,
+      "name": "Book Component Change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2608,
+    "fields": {
+      "apn": 2608,
+      "name": "Swap Rotable"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2609,
+    "fields": {
+      "apn": 2609,
+      "name": "Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2610,
+    "fields": {
+      "apn": 2610,
+      "name": "Perform Approval"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2612,
+    "fields": {
+      "apn": 2612,
+      "name": "Picking List Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2613,
+    "fields": {
+      "apn": 2613,
+      "name": "Technical Queries"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2614,
+    "fields": {
+      "apn": 2614,
+      "name": "Create Technical Query"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2615,
+    "fields": {
+      "apn": 2615,
+      "name": "Settings"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2618,
+    "fields": {
+      "apn": 2618,
+      "name": "Software Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2619,
+    "fields": {
+      "apn": 2619,
+      "name": "Authorized Configuration Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2627,
+    "fields": {
+      "apn": 2627,
+      "name": "Aircraft Code Definitions"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2629,
+    "fields": {
+      "apn": 2629,
+      "name": "Logistics Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2630,
+    "fields": {
+      "apn": 2630,
+      "name": "Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2639,
+    "fields": {
+      "apn": 2639,
+      "name": "Aircraft Events"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2643,
+    "fields": {
+      "apn": 2643,
+      "name": "Customer Relationship Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2644,
+    "fields": {
+      "apn": 2644,
+      "name": "Counter Readout"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2645,
+    "fields": {
+      "apn": 2645,
+      "name": "Workorder Release"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2646,
+    "fields": {
+      "apn": 2646,
+      "name": "Workorder Uplift"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2662,
+    "fields": {
+      "apn": 2662,
+      "name": "Hangar Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2672,
+    "fields": {
+      "apn": 2672,
+      "name": "Workpackage View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2673,
+    "fields": {
+      "apn": 2673,
+      "name": "Pick-up confirmation"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2674,
+    "fields": {
+      "apn": 2674,
+      "name": "Search Tool"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2675,
+    "fields": {
+      "apn": 2675,
+      "name": "Workpackage Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2676,
+    "fields": {
+      "apn": 2676,
+      "name": "Personal Dictionary"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2677,
+    "fields": {
+      "apn": 2677,
+      "name": "Hangar Planning"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2679,
+    "fields": {
+      "apn": 2679,
+      "name": "Taskcard View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2684,
+    "fields": {
+      "apn": 2684,
+      "name": "Routine Check"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2693,
+    "fields": {
+      "apn": 2693,
+      "name": "Recently Changed Documents"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2694,
+    "fields": {
+      "apn": 2694,
+      "name": "Screenshot Editor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2697,
+    "fields": {
+      "apn": 2697,
+      "name": "Taskcard Time Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2699,
+    "fields": {
+      "apn": 2699,
+      "name": "Structural Damage New Entry"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2700,
+    "fields": {
+      "apn": 2700,
+      "name": "Structural Damage Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2701,
+    "fields": {
+      "apn": 2701,
+      "name": "AMOS Data Correction App"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2704,
+    "fields": {
+      "apn": 2704,
+      "name": "Taskcard Closure"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2706,
+    "fields": {
+      "apn": 2706,
+      "name": "Taskcard Perform Work Step"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2707,
+    "fields": {
+      "apn": 2707,
+      "name": "Taskcard Inspection"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2711,
+    "fields": {
+      "apn": 2711,
+      "name": "WMS Interface Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2717,
+    "fields": {
+      "apn": 2717,
+      "name": "Annual Complaint Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2732,
+    "fields": {
+      "apn": 2732,
+      "name": "Clock In / Clock Out"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2734,
+    "fields": {
+      "apn": 2734,
+      "name": "Cost and Revenue Tracking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2736,
+    "fields": {
+      "apn": 2736,
+      "name": "Aircraft Transfer Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2740,
+    "fields": {
+      "apn": 2740,
+      "name": "Certificate Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2749,
+    "fields": {
+      "apn": 2749,
+      "name": "Production Control Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2755,
+    "fields": {
+      "apn": 2755,
+      "name": "Financial Control Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2756,
+    "fields": {
+      "apn": 2756,
+      "name": "Financial Project Analysis"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2757,
+    "fields": {
+      "apn": 2757,
+      "name": "Structural Damage View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2758,
+    "fields": {
+      "apn": 2758,
+      "name": "Sim News Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2762,
+    "fields": {
+      "apn": 2762,
+      "name": "AeroComponent Interface Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2765,
+    "fields": {
+      "apn": 2765,
+      "name": "Time Zone Selection"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2773,
+    "fields": {
+      "apn": 2773,
+      "name": "Part Requirements Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2778,
+    "fields": {
+      "apn": 2778,
+      "name": "Picking List Handover Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2818,
+    "fields": {
+      "apn": 2818,
+      "name": "Configuration Definition"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2844,
+    "fields": {
+      "apn": 2844,
+      "name": "Customer Requirement Inspection"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2845,
+    "fields": {
+      "apn": 2845,
+      "name": "Taskcard Component Change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2846,
+    "fields": {
+      "apn": 2846,
+      "name": "Jobcard Component Change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2848,
+    "fields": {
+      "apn": 2848,
+      "name": "Jobcard Time Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2849,
+    "fields": {
+      "apn": 2849,
+      "name": "Customer Requirement Time Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2850,
+    "fields": {
+      "apn": 2850,
+      "name": "Jobcard Closure"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2851,
+    "fields": {
+      "apn": 2851,
+      "name": "Customer Requirement Closure"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2862,
+    "fields": {
+      "apn": 2862,
+      "name": "Customer Requirement Perform Work Step"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2863,
+    "fields": {
+      "apn": 2863,
+      "name": "Jobcard Perform Work Step"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2866,
+    "fields": {
+      "apn": 2866,
+      "name": "Customer Requirement Component Change"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2871,
+    "fields": {
+      "apn": 2871,
+      "name": "AIM Dataset Repository"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2872,
+    "fields": {
+      "apn": 2872,
+      "name": "Jobcard Inspection"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2873,
+    "fields": {
+      "apn": 2873,
+      "name": "Customer Requirement View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2874,
+    "fields": {
+      "apn": 2874,
+      "name": "Jobcard View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2877,
+    "fields": {
+      "apn": 2877,
+      "name": "Workorder Perform Measurement"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2878,
+    "fields": {
+      "apn": 2878,
+      "name": "Taskcard Perform Measurement"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2879,
+    "fields": {
+      "apn": 2879,
+      "name": "Customer Requirement Perform Measurement"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2880,
+    "fields": {
+      "apn": 2880,
+      "name": "Jobcard Perform Measurement"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2881,
+    "fields": {
+      "apn": 2881,
+      "name": "AIM Code Mapping Editor"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2888,
+    "fields": {
+      "apn": 2888,
+      "name": "Financial Activity Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2892,
+    "fields": {
+      "apn": 2892,
+      "name": "Budget Administration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2901,
+    "fields": {
+      "apn": 2901,
+      "name": "Client Information"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2920,
+    "fields": {
+      "apn": 2920,
+      "name": "Budget Analysis"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2924,
+    "fields": {
+      "apn": 2924,
+      "name": "Release To Service Overview Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2925,
+    "fields": {
+      "apn": 2925,
+      "name": "My Personal Data Summary"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2935,
+    "fields": {
+      "apn": 2935,
+      "name": "My Work History"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2950,
+    "fields": {
+      "apn": 2950,
+      "name": "Line Maintenance Manager"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2951,
+    "fields": {
+      "apn": 2951,
+      "name": "Line Maintenance Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2977,
+    "fields": {
+      "apn": 2977,
+      "name": "Ground Time Search"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2980,
+    "fields": {
+      "apn": 2980,
+      "name": "Report Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2982,
+    "fields": {
+      "apn": 2982,
+      "name": "Task Classification"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2983,
+    "fields": {
+      "apn": 2983,
+      "name": "Workpackage Release"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2986,
+    "fields": {
+      "apn": 2986,
+      "name": "AIM Basic Data Harmonizer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2990,
+    "fields": {
+      "apn": 2990,
+      "name": "Drive"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2991,
+    "fields": {
+      "apn": 2991,
+      "name": "Staff Messenger"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2997,
+    "fields": {
+      "apn": 2997,
+      "name": "Workorder Defer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2998,
+    "fields": {
+      "apn": 2998,
+      "name": "Taskcard Defer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 2999,
+    "fields": {
+      "apn": 2999,
+      "name": "Customer Requirement Defer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3005,
+    "fields": {
+      "apn": 3005,
+      "name": "Taskcard Mark Work Step as Not Performed"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3006,
+    "fields": {
+      "apn": 3006,
+      "name": "Customer Requirement Mark Work Step as Not Performed"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3007,
+    "fields": {
+      "apn": 3007,
+      "name": "Jobcard Mark Work Step as Not Performed"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3008,
+    "fields": {
+      "apn": 3008,
+      "name": "Reordering Group Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3014,
+    "fields": {
+      "apn": 3014,
+      "name": "Airport Map"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3021,
+    "fields": {
+      "apn": 3021,
+      "name": "Aircraft Landing"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3025,
+    "fields": {
+      "apn": 3025,
+      "name": "Workorder Resource Request"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3027,
+    "fields": {
+      "apn": 3027,
+      "name": "Workpackage Assign Line Check"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3062,
+    "fields": {
+      "apn": 3062,
+      "name": "AMOSmonitoring"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3068,
+    "fields": {
+      "apn": 3068,
+      "name": "External Allocation Interface Setup"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3075,
+    "fields": {
+      "apn": 3075,
+      "name": "Component Workpackage"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3077,
+    "fields": {
+      "apn": 3077,
+      "name": "Meta Data Grouping Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3090,
+    "fields": {
+      "apn": 3090,
+      "name": "Planning Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3091,
+    "fields": {
+      "apn": 3091,
+      "name": "Part Definition Management"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3098,
+    "fields": {
+      "apn": 3098,
+      "name": "Commercial Price Lists"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3123,
+    "fields": {
+      "apn": 3123,
+      "name": "External Services Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3125,
+    "fields": {
+      "apn": 3125,
+      "name": "Material Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3126,
+    "fields": {
+      "apn": 3126,
+      "name": "Fleet Tracker Dashboard"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3128,
+    "fields": {
+      "apn": 3128,
+      "name": "Configuration Control"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3136,
+    "fields": {
+      "apn": 3136,
+      "name": "Notification Centre"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3137,
+    "fields": {
+      "apn": 3137,
+      "name": "AMOS Tracing"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3138,
+    "fields": {
+      "apn": 3138,
+      "name": "Non-Technical Task Closure"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3139,
+    "fields": {
+      "apn": 3139,
+      "name": "Daily Fleet Status Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3140,
+    "fields": {
+      "apn": 3140,
+      "name": "Non-Technical Task View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3142,
+    "fields": {
+      "apn": 3142,
+      "name": "Fleet Tracker Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3144,
+    "fields": {
+      "apn": 3144,
+      "name": "Cost Centre Assignment Rules"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3145,
+    "fields": {
+      "apn": 3145,
+      "name": "Non-Technical Task Time Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3166,
+    "fields": {
+      "apn": 3166,
+      "name": "Production Planning Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3170,
+    "fields": {
+      "apn": 3170,
+      "name": "PDF Overlay"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3175,
+    "fields": {
+      "apn": 3175,
+      "name": "PDF Overlay View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3181,
+    "fields": {
+      "apn": 3181,
+      "name": "Pick Up Part"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3182,
+    "fields": {
+      "apn": 3182,
+      "name": "Return Part"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3197,
+    "fields": {
+      "apn": 3197,
+      "name": "Non Technical Task Forecast"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3227,
+    "fields": {
+      "apn": 3227,
+      "name": "Swiss-AS Website"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3228,
+    "fields": {
+      "apn": 3228,
+      "name": "Swiss-AS Customer Portal"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3290,
+    "fields": {
+      "apn": 3290,
+      "name": "AMOSmobile/Stores Configuration"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3296,
+    "fields": {
+      "apn": 3296,
+      "name": "Component Booking"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3298,
+    "fields": {
+      "apn": 3298,
+      "name": "External Demands Viewer"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3301,
+    "fields": {
+      "apn": 3301,
+      "name": "Define Commercial Man-Hours"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3302,
+    "fields": {
+      "apn": 3302,
+      "name": "Inspection View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3365,
+    "fields": {
+      "apn": 3365,
+      "name": "Indirect Jobs"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3375,
+    "fields": {
+      "apn": 3375,
+      "name": "Assign Staff"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3379,
+    "fields": {
+      "apn": 3379,
+      "name": "Staff Assigned View"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3424,
+    "fields": {
+      "apn": 3424,
+      "name": "Stores"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 3432,
+    "fields": {
+      "apn": 3432,
+      "name": "PDF Overlay Library"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10001,
+    "fields": {
+      "apn": 10001,
+      "name": "OPEN DIR LIST"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10002,
+    "fields": {
+      "apn": 10002,
+      "name": "CofA application"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10003,
+    "fields": {
+      "apn": 10003,
+      "name": "Consumption Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10005,
+    "fields": {
+      "apn": 10005,
+      "name": "TRANSFER LIST rus"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10006,
+    "fields": {
+      "apn": 10006,
+      "name": "TRANSFER LIST ORDER"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10007,
+    "fields": {
+      "apn": 10007,
+      "name": "TRANSFER LIST PICKSLIP"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10008,
+    "fields": {
+      "apn": 10008,
+      "name": "MX-1"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10009,
+    "fields": {
+      "apn": 10009,
+      "name": "Act PP ATI"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10010,
+    "fields": {
+      "apn": 10010,
+      "name": "CUSTOMS PN DESCRIPTION"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10012,
+    "fields": {
+      "apn": 10012,
+      "name": "List of closed workpackages"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10013,
+    "fields": {
+      "apn": 10013,
+      "name": "EnStRep"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10014,
+    "fields": {
+      "apn": 10014,
+      "name": "APU Component Life Status"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10015,
+    "fields": {
+      "apn": 10015,
+      "name": "EnStRepStock"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10016,
+    "fields": {
+      "apn": 10016,
+      "name": "Fleet data"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10017,
+    "fields": {
+      "apn": 10017,
+      "name": "MP Structural Inspections"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10018,
+    "fields": {
+      "apn": 10018,
+      "name": "TQ Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10019,
+    "fields": {
+      "apn": 10019,
+      "name": "Closed WO by ATECH VKO SVO"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10020,
+    "fields": {
+      "apn": 10020,
+      "name": "Closed WO by ATECH TLL"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10021,
+    "fields": {
+      "apn": 10021,
+      "name": "C Check"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10023,
+    "fields": {
+      "apn": 10023,
+      "name": "List of intervals of MP"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10024,
+    "fields": {
+      "apn": 10024,
+      "name": "Document audit status"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10025,
+    "fields": {
+      "apn": 10025,
+      "name": "JC PREVIEW"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10026,
+    "fields": {
+      "apn": 10026,
+      "name": "UTG TRANSFERLIST"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10027,
+    "fields": {
+      "apn": 10027,
+      "name": "\u0423\u0447\u0435\u0442 \u0424\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0422\u0440\u0443\u0434\u043e\u0437\u0430\u0442\u0440\u0430\u0442"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10028,
+    "fields": {
+      "apn": 10028,
+      "name": "APU`s Utilization Report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10029,
+    "fields": {
+      "apn": 10029,
+      "name": "\u0423\u0447\u0435\u0442 \u0432\u044b\u0434\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u043e\u0432 \u0438 \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u043e\u0432 \u0432 \u0440\u0430\u043c\u043a\u0430\u0445 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u043e \u0444\u043e\u0440\u043c\u044b \u0422\u041e"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10030,
+    "fields": {
+      "apn": 10030,
+      "name": "PIREP/MAREP RRJ95"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10031,
+    "fields": {
+      "apn": 10031,
+      "name": "\u041a\u0423\u041d \u0410\u0422 \u0410\u041a\u0420"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10032,
+    "fields": {
+      "apn": 10032,
+      "name": "UTG TRANSFER LIST ORDER"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10033,
+    "fields": {
+      "apn": 10033,
+      "name": "\u041f\u0421\u0411 \u041b\u0438\u0437\u0438\u043d\u0433"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10034,
+    "fields": {
+      "apn": 10034,
+      "name": "\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a/\u0412\u042d\u0411 \u041b\u0438\u0437\u0438\u043d\u0433"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10035,
+    "fields": {
+      "apn": 10035,
+      "name": "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0435\u043d\u043d\u044b\u0445 \u0434\u0435\u0444\u0435\u043a\u0442\u043e\u0432 RRJ95"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10036,
+    "fields": {
+      "apn": 10036,
+      "name": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0435\u043d\u043d\u044b\u0445 \u0434\u0435\u0444\u0435\u043a\u0442\u043e\u0432 RRJ95"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10037,
+    "fields": {
+      "apn": 10037,
+      "name": "apu report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10038,
+    "fields": {
+      "apn": 10038,
+      "name": "FORM M15 TRANSFER"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10039,
+    "fields": {
+      "apn": 10039,
+      "name": "\u0412\u042d\u0411-\u041b\u0418\u0417\u0418\u041d\u0413 RRJ95"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10040,
+    "fields": {
+      "apn": 10040,
+      "name": "MHR for SB report"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10041,
+    "fields": {
+      "apn": 10041,
+      "name": "\u041d\u0430\u043a\u043b\u0430\u0434\u043d\u0430\u044f M-56 (UTG)"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10042,
+    "fields": {
+      "apn": 10042,
+      "name": "\u041f\u0440\u0438\u0445\u043e\u0434\u043d\u044b\u0439 \u043e\u0440\u0434\u0435\u0440 M-60 (PickSlip)"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10043,
+    "fields": {
+      "apn": 10043,
+      "name": "\u041f\u0440\u0438\u0445\u043e\u0434\u043d\u044b\u0439 \u043e\u0440\u0434\u0435\u0440 M-60 (Order)"
+    }
+  },
+  {
+    "model": "cases.amosmodule",
+    "pk": 10044,
+    "fields": {
+      "apn": 10044,
+      "name": "Defer Defects for RRJ95 (ATECH)"
+    }
+  }
+]
