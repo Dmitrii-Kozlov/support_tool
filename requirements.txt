@@ -1,7 +1,7 @@
 asgiref==3.5.0
 bcrypt==3.2.0
 cffi==1.15.0
-cryptography==36.0.2
+cryptography==41.0.5
 Django==3.2
 Fabric3==1.14.post1
 invoke==1.6.0
