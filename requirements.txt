@@ -18,3 +18,4 @@ django-extensions==3.1.5
 djangorestframework==3.13.1
 django-rest-auth==0.9.5
 django-debug-toolbar==3.2.4
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
